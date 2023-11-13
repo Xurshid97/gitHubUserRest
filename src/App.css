@@ -1,7 +1,9 @@
+@import url(https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Yeseva One', display;
 }
 
 a {
@@ -12,6 +14,9 @@ a {
     display: flex;
     gap: 25px;
     padding: 15px 50px;
+}
+.navbar a {
+    font-size: 26px;
 }
 .allCards {
     display: grid;
@@ -25,6 +30,9 @@ a {
     border: 1px solid black;
     border-radius: 15px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .userCard:hover {
@@ -37,12 +45,21 @@ a {
     gap: 15px;
     padding: 25px 50px;
 }
+
 .todoCard {
     border: 1px solid black;
     display: flex;
     align-items: center;
     gap: 15px;
     justify-content: space-between;
-    padding: 10px 25px;
-    border-radius: 20px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.todoCard:hover {
+    box-shadow: 0 0 2px green;
+}
+.todoCard h5:nth-child(3){
+    color: red;
 }
