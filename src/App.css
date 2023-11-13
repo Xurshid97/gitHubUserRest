@@ -63,3 +63,17 @@ a {
 .todoCard h5:nth-child(3){
     color: red;
 }
+@media screen and (max-width: 1150px) {
+    .allCards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .allCards {
+        grid-template-columns: 1fr;
+    }
+    .todoCard {
+        font-size: 18px;
+    }
+}
